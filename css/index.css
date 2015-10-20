@@ -1,28 +1,29 @@
 body{
-	font-family: 'Open Sans';
+	font-family: 'Open Sans',sans-serif;
 	color: #fff;
 }
 #logo{
-	top:60px;
+	top:7%;
 	position: relative;
 
 
 }
 #headings{
-	font-family: 'Source Sans Pro';
 	position: relative;
-	top: -50px;
+	top: -6%;
 	
 }
 #typed{
 	font-size: 144px;
 	color: #00FF30;
-	font-family: 'Josefin Slab';
+	font-family: 'Josefin Slab',monospace;
+	position: relative;
+	top: -20%;
 }
 #textTyped{
 	height:144px;
 	position: relative;
-	top: -100px;
+	top: -20%;
 }
 #Drop{
 	background-image: url(../images/top.jpg);
@@ -36,13 +37,12 @@ a{
 #Head{
 	text-align : center;
 	color: white;
-	font-family: sans-serif;
 	max-height: 100%;
 	overflow: none;
 }
 
 .det{
-	width: 600px;
+	width: 50%;
 	margin: 0px auto;
 	text-align: center;
 }
@@ -55,7 +55,7 @@ a{
 #abt{
 	position: relative;
 
-	width : 600px;
+	width : 100%;
 	opacity: 0;
 	color: #3e3e3e;
 }
@@ -75,14 +75,14 @@ a{
 	font-size: 36px;
 }
 #team{
-	width:100px;
+	width:13%;
 	margin: 0px auto;
 	font-size: 48px;
 	color: #3e3e3e;
 
 }
 #ContTeam{
-	width : 960px;
+	width : 75%;
 	margin: 0px auto;
 }
 #secEvents{
@@ -94,17 +94,17 @@ a{
 }
 #events h2{
 	position: relative;
-	top: 20px;
+	top: 2%;
 	font-size: 72px;
 	color : white;
-	font-family: 'Josefin Slab';
+	font-family: 'Josefin Slab',monospace;
 }
 .eventTimeTable{
 	position: relative;
 	top: 00px;
 	width: 300px;
 	float: left;
-	margin: 20px;
+	margin: 2%;
 	font-size: 18px;
 	border-collapse: collapse;
 	border : 1px solid #fff;
@@ -114,11 +114,10 @@ a{
 }
 .eventTimeTable th{
 	font-size: 24px;
-	font-family: 'Source Sans Pro';
 	margin: 0px;
 }
 #evtTable{
-	width: 1080px;
+	width: 79%;
 	margin: 0px auto;
 }
 .teamMem{
@@ -132,16 +131,32 @@ a{
 #secTeam{
 
 	position: relative;
-	top: -400;
 }
 #particles-js{
 	background-color: #3e3e3e;
 }
 #parti
 {
-	width: 700px;
+	width: 52%;
 	float: right;
 
+}
+#Contlinks{
+	width: 30%;
+	float: left;
+	margin: 2%;
+	padding: 10px;
+}
+#FootImg{
+	background-color: #000;
+	border-radius: 10px;
+}
+#FootImg img{
+	max-width: 100%;
+}
+#Contlinks a{
+	color: white;
+	text-decoration: underline;
 }
 .teamMem{
 	float: left;
@@ -160,13 +175,24 @@ a{
 	#MainTable{
 		display: table;
 		margin: 0px auto;
-		width: 300px;
+		width: 90%;
 		float: none;
 	}
 	#evtTable{
 		width: 300px;
 	}
 	
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/Preloader_1.gif) center no-repeat #fff;
 }
 @media screen and (max-width: 1044px){
 	#Drop{
@@ -177,10 +203,42 @@ a{
 		float: none;
 		margin: 0px auto;
 	}
+	.det{
+		width:90%;
+	}
 	
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 770px) {
 	#abt{
-		transform : scale(0.80);
+		transform : scale(0.90);
+	}
+	.det {
+		width:90%;
+	}
+	.teamMem img{
+	height: 100px;
+	width: 100px;
+	}
+	#ContTeam{
+		width: 100%;
+	}
+	.eventTimeTable{
+		width: 100%
+	}
+	#evtTable{
+		width: 90%;
+	}
+	#parti{
+		width: 100%;
+		float: none;
+		margin: 0px auto;
+	}
+	#parti form{
+		transform: scale(0.8);
 	}
 }
+@media screen and (max-width: 1300px) {
+	#Ntn{
+		display: none;
+	}
+	}
