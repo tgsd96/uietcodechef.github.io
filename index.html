@@ -23,14 +23,12 @@
 		$(document).ready(
 			function(){
 				var hei = $(window).height();
-				$('.det').css('height',hei);
-				$('.sect').css('height',hei); 
 				$('.eventTimeTable').css('height',hei-200);
 				$('#typed').typed({strings : ["C","C++","Java",".NET","Python","HTML"], typeSpeed: 200, loop:true});
 				
 				$('#fullpage').fullpage({
-					sectionsColor: ['#000000', '#fff', '#7BAABE', '#4f4', '#fff','#3e3e3e'],
-					scrollOverflow : true,
+					sectionsColor: ['#000000', '#fff', '#3e3e3e', '#4f4', '#fff','#3e3e3e'],
+					scrollOverflow : false,
 					'afterLoad': function(anchorLink,index){
 						if(index==2)
 						{
@@ -70,7 +68,8 @@
                 <h3>Compete</h3>
             </div>
 			</div>
-			<div class="sect" id="secEvents">
+		</div>
+			<div class="section" id="secEvents">
 				<div id="events">
 				<h2 style="position:relative; top:20px;">Events</h2>
 				<div id="evtTable">
@@ -137,13 +136,12 @@
 				</div>
 				</div>
 			</div>
-			
 			<div class="section" id="classes">
 				<div>
 					<a href="" style="color:white;"><h2 style="text-align:center;font-size:48px;">Classes delivered, resources & quizzes</h2></a>
 				</div>
 			</div>
-			<div class="sect" id="secTeam">
+			<div class="section" id="secTeam">
 				<div id="team">
 						<h2>Team
 						</h2>
@@ -156,7 +154,7 @@
 					<div class="teamMem"><img src="images/anuj1.jpg" alt="" class="imgProp"><p>Anuj Dimri</p></div>
 					</div>
 			</div>
-			<div class="sect" id="contact">
+			<div class="section" id="contact">
 				<div >
 					<h2 style="font-size:48px; background-color:#3e3e3e; color:white; text-align:center;">Contact Us</h2>
 					<div id="parti">
@@ -189,7 +187,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 	</div>
