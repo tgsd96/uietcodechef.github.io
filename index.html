@@ -3,17 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CodeChef</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
 	<link rel="shortcut icon" href="images/codechef-logo.png">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Gochi+Hand|Josefin+Slab' rel='stylesheet' type='text/css'>
 	<script src="js/jquery.js"></script>
+	<script>
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	</script>
 	<script src="js/jquery.slimscroll.js"></script>
 	<script type="text/javascript" src = "js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src= "js/jquery.scrollme.min.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
-	<script type="text/javascript" src="js/contactvalidate.js"></script>
-	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/contactstylesheet.css">
 	<script>
@@ -23,7 +26,7 @@
 				$('.det').css('height',hei);
 				$('.sect').css('height',hei); 
 				$('.eventTimeTable').css('height',hei-200);
-				$('#typed').typed({strings : ["C","C++","Java",".NET","Python","Html"], typeSpeed: 200, loop:true});
+				$('#typed').typed({strings : ["C","C++","Java",".NET","Python","HTML"], typeSpeed: 200, loop:true});
 				
 				$('#fullpage').fullpage({
 					sectionsColor: ['#000000', '#fff', '#7BAABE', '#4f4', '#fff','#3e3e3e'],
@@ -31,7 +34,7 @@
 					'afterLoad': function(anchorLink,index){
 						if(index==2)
 						{
-							$('#abt').animate({'opacity':'1'},1000);
+							$('#abt').animate({'opacity':'1'},200);
 
 						}
 					},
@@ -41,8 +44,10 @@
 				});
 			});
 	</script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Josefin+Slab' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div class="se-pre-con"></div>
 	<div id="fullpage">
 		<div class="section" id="Drop">
 			<div id="Head">
@@ -59,7 +64,7 @@
 			<div id = "abt">
 				<h2 class="super">Who are we?</h2>
                 <p class="abt">We are CodeChef Campus Chapters, that aim at promoting competitive programming in various colleges and schools around the world and help students become better problem solvers which goes a long way in learning as well as in their career development. So if you are looking for a way to meet fellow programmers, improve your skills, and have fun start or join a CodeChef Campus Chapter at your college or school . CodeChef Campus Chapters are independent programming clubs that use CodeChef's platform and resources.</p>
-                <br><br><br>
+                <br>
                 <h3>Learn</h3>
                 <h3>Code</h3>
                 <h3>Compete</h3>
@@ -67,7 +72,7 @@
 			</div>
 			<div class="sect" id="secEvents">
 				<div id="events">
-				<h2>Events</h2>
+				<h2 style="position:relative; top:20px;">Events</h2>
 				<div id="evtTable">
 				<table class="eventTimeTable" id="MainTable">
 				<tr class="header">
@@ -109,7 +114,7 @@
 					<td class="nextMon"></td>
 				</tr>
 				</table>
-				<table class="eventTimeTable">
+				<table class="eventTimeTable" id="Ntn">
 				<tr class="header">
 					<th>NTN Month</th>
 				</tr>
@@ -147,7 +152,7 @@
 					<div class="teamMem"><img src="images/test.jpg" alt="" class="imgProp"><p>Tushar Garg</p></div>
 					<div class="teamMem"><img src="images/pearl.jpg" alt="" class="imgProp"><p>Pearl Sikka</p></div>
 					<div class="teamMem"><img src="images/kriti.jpg" alt="" class="imgProp"><p>Kriti Dutta</p></div>
-					<div class="teamMem"><img src="images/harsimran.jpg" alt="" class="imgProp"><p>Harsimran Singh</p></div>
+					<div class="teamMem"><img src="images/harsimran.jpg" alt="" class="imgProp"><p>Harsimran</p></div>
 					<div class="teamMem"><img src="images/anuj1.jpg" alt="" class="imgProp"><p>Anuj Dimri</p></div>
 					</div>
 			</div>
@@ -160,17 +165,8 @@
 						?>
 						<div id="contact">
 						<form action="php/contactvalidate1.php" method="POST" name="regform" onsubmit="return validatedForm(this);">	
-						<table id="userinfo">
-						<tr><th>
-						</th><td>
 						<input type="text" placeholder="NAME" name="username" size="40%" class="contactus">
-						</td></tr>
-						<tr><th>	
-						</th><td>
 						<input type="text" name="email" placeholder="EMAIL" size="40%" class="contactus">
-						</td></tr>
-						<tr><th>	
-						</th><td>
 						<select name="branch">
 						<option  value="-1">Select Branch</option>	
 						<option  value="1">CSE</option>
@@ -180,9 +176,6 @@
 						<option  value="5">MECHANICAL</option>
 						<option  value="6">BIOTECH</option>
 						</select>
-						</td></tr>
-						<tr><th>	
-						</th><td>
 						<select name="year">
 						<option value="-1">Select Year</option>
 						<option value="1">1</option>
@@ -190,16 +183,9 @@
 						<option value="3">3</option>
 						<option value="4">4</option>
 						</select>
-						</td></tr>
-						<tr><th>	
-						</th><td>
 						<textarea name='query' id='query' placeholder="QUERY*" rows='5' col='40'></textarea>
-						</td></tr>	
-						<tr><td>	
 						<input type="submit" name="submit" value="Send a Message" class="submit">
-						</td></tr>
 						</form>
-						</table>
 						</div>
 					</div>
 				</div>

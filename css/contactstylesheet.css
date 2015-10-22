@@ -1,8 +1,8 @@
-form    {
+form{
 margin:auto;
 position:relative;
-width:450px;
-height:550px;
+width:70%;
+height:500px;
 font-size: 30px;
 font-style: italic;
 line-height: 20px;
@@ -16,7 +16,7 @@ box-shadow: box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 background-color:rgba(255, 255, 255, 0.1);
 }
 input    {
-width:400px;
+width:90%;
 padding: 10px;
 margin-bottom: 10px;
 display:block;
@@ -25,7 +25,7 @@ height: 30px;
 }
 
 textarea#query{
-	width:400px;
+	width:90%;
 	height:200px;
 	display: block;
 	padding: 10px;
@@ -34,16 +34,15 @@ textarea#query{
 
 select
 {
-	width:420px;
-	height:60px;
+	width:90%;
+	height:0px;
 	padding: 10px;
 	margin-bottom: 10px;
 }
 input.submit {
 width:100px;
-position:absolute;
-left:20px;
-bottom:1%;
+position:relative;
+top:10px;
 background:#09C;
 color:#fff;
 font-family: Tahoma, Geneva, sans-serif;
@@ -62,7 +61,9 @@ textarea:focus, input:focus {
 border: 1px solid #09C;
 }
 
-
+#userinfo{
+	width: 100%;
+}
 
 
 

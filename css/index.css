@@ -3,22 +3,21 @@ body{
 	color: #fff;
 }
 #logo{
-	top:7%;
+	top:10%;
 	position: relative;
 
 
 }
 #headings{
 	position: relative;
-	top: -6%;
-	
+	top: -100px;
 }
 #typed{
 	font-size: 144px;
 	color: #00FF30;
 	font-family: 'Josefin Slab',monospace;
 	position: relative;
-	top: -20%;
+	top: -100%;
 }
 #textTyped{
 	height:144px;
@@ -37,8 +36,6 @@ a{
 #Head{
 	text-align : center;
 	color: white;
-	max-height: 100%;
-	overflow: none;
 }
 
 .det{
@@ -160,7 +157,7 @@ a{
 }
 .teamMem{
 	float: left;
-	margin: 20px;
+	margin-right: 20px;
 }
 .imgProp{
 
@@ -202,6 +199,7 @@ a{
 	#parti{
 		float: none;
 		margin: 0px auto;
+		width: 100%;
 	}
 	.det{
 		width:90%;
@@ -233,8 +231,17 @@ a{
 		float: none;
 		margin: 0px auto;
 	}
-	#parti form{
-		transform: scale(0.8);
+	.sect h2{
+		font-size: 24px;
+	}
+	.super{
+		font-size: 36px;
+	}
+	#typed h2{
+		font-size: 36px;
+	}
+	form{
+		width: 100%;
 	}
 }
 @media screen and (max-width: 1300px) {
