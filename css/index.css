@@ -14,7 +14,7 @@ body{
 }
 #typed{
 	font-size: 144px;
-	color: #00FF30;
+	color: green;
 	font-family: 'Josefin Slab',monospace;
 	position: relative;
 	top: -100%;
@@ -27,7 +27,7 @@ body{
 #Drop{
 	background-image: url(../images/top.jpg);
 	max-width: 100%;
-	
+
 }
 a{
 	color: #3e3e3e;
@@ -44,7 +44,7 @@ a{
 	text-align: center;
 }
 .section{
-	background-size: cover;	
+	background-size: cover;
 }
 #sec{
 	background: white;
@@ -59,7 +59,7 @@ a{
 #classes{
 	z-index: 0;
 	background-image: url(../images/comp.jpg);
-	
+
 }
 #contact{
 	background-color: #3e3e3e;
@@ -175,7 +175,7 @@ a{
 	#evtTable{
 		width: 300px;
 	}
-	
+
 }
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -201,7 +201,7 @@ a{
 	.det{
 		width:90%;
 	}
-	
+
 }
 @media screen and (max-width: 770px) {
 	#abt{
