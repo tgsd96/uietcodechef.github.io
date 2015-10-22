@@ -25,7 +25,7 @@
 				var hei = $(window).height();
 				$('.eventTimeTable').css('height',hei-200);
 				$('#typed').typed({strings : ["C","C++","Java",".NET","Python","HTML"], typeSpeed: 200, loop:true});
-				
+
 				$('#fullpage').fullpage({
 					sectionsColor: ['#000000', '#fff', '#3e3e3e', '#4f4', '#fff','#3e3e3e'],
 					scrollOverflow : false,
@@ -35,10 +35,7 @@
 							$('#abt').animate({'opacity':'1'},200);
 
 						}
-					},
-					'onLeave':function(anchorLink,index){
-						$('#abt').animate({'opacity':'0'},500);
-					},
+					}
 				});
 			});
 	</script>
@@ -162,11 +159,11 @@
 						include("php/db_contact.php");
 						?>
 						<div id="contact">
-						<form action="php/contactvalidate1.php" method="POST" name="regform" onsubmit="return validatedForm(this);">	
+						<form action="php/contactvalidate1.php" method="POST" name="regform" onsubmit="return validatedForm(this);">
 						<input type="text" placeholder="NAME" name="username" size="40%" class="contactus">
 						<input type="text" name="email" placeholder="EMAIL" size="40%" class="contactus">
 						<select name="branch">
-						<option  value="-1">Select Branch</option>	
+						<option  value="-1">Select Branch</option>
 						<option  value="1">CSE</option>
 						<option  value="2">ECE</option>
 						<option  value="3">EEE</option>
